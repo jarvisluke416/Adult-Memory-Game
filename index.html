@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h1>Memory Game</h1>
+    <div class="game-container">
+        <!-- First pair of cards (data-card="1") -->
+        <div class="card" data-card="1">
+            <div class="card-inner">
+                <div class="card-front">
+                 <a href="https://chaturbate.com/ava_williams_/" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibF29lG-z2xN6r1jNHw-_kSgx-cWK4eeaNPKdcF0rZKM1LA7ZGh3H0kNhM2qKTfMPDSnt_VxnpyHUaI_-wtb_RxchcwkJVoALzAyX3afLIJavaQKnVO2uDIth1cpaGyOvQjNT736m1xJrwvGduYNCnervKc4nNTJxS1r0GV-dxMsPK1aq5X5tyoDvy/s1600/71b342bddf5492f3e68d1c929e6a299175679425.jpg" alt="Image 1" class="card-img" id="luke">ava_williams_</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-card="1">
+            <div class="card-inner">
+                <div class="card-front">
+                     <a href="https://chaturbate.com/ava_williams_/" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibF29lG-z2xN6r1jNHw-_kSgx-cWK4eeaNPKdcF0rZKM1LA7ZGh3H0kNhM2qKTfMPDSnt_VxnpyHUaI_-wtb_RxchcwkJVoALzAyX3afLIJavaQKnVO2uDIth1cpaGyOvQjNT736m1xJrwvGduYNCnervKc4nNTJxS1r0GV-dxMsPK1aq5X5tyoDvy/s1600/71b342bddf5492f3e68d1c929e6a299175679425.jpg" alt="Image 1" class="card-img" id="luke">ava_williams_</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Second pair of cards (data-card="2") -->
+        <div class="card" data-card="2">
+            <div class="card-inner">
+                <div class="card-front">
+                     <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=bunnybonn1e" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQ7NGw66Q2l__Y_E_sdbRsSuURHeCcmOXxu_YB2OwEVqA-dCVptgj4LgfukSqbnveL1sQuo5RJ6b94g9I0akpveV7GUQf-fLGXT8pBvU_YoJdnu50SY5qBiZTJgBBfcP0xZe2QSRcGGUC9krtBSKnmrluaEEVzELQ9HnX9kCYCnkGjiXEYBbwnFnV/s1600/3a4215cf8923c201fc9e6edc20e373f753e882c2.jpg" alt="Image 2" class="card-img" id="luke">bunnybonn1e</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-card="2">
+            <div class="card-inner">
+                <div class="card-front">
+                   <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=bunnybonn1e" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQ7NGw66Q2l__Y_E_sdbRsSuURHeCcmOXxu_YB2OwEVqA-dCVptgj4LgfukSqbnveL1sQuo5RJ6b94g9I0akpveV7GUQf-fLGXT8pBvU_YoJdnu50SY5qBiZTJgBBfcP0xZe2QSRcGGUC9krtBSKnmrluaEEVzELQ9HnX9kCYCnkGjiXEYBbwnFnV/s1600/3a4215cf8923c201fc9e6edc20e373f753e882c2.jpg" alt="Image 2" class="card-img" id="luke">bunnybonn1e</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Third pair of cards (data-card="3") -->
+        <div class="card" data-card="3">
+            <div class="card-inner">
+                <div class="card-front">
+                 <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=victoria__rossi" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyUtbUybX7Z2cQXGOILGgufL2kNbXJJWciJPI28ax74rn-D7Q27gjOdZlEHjm0hrISA9OhyUg78yPnoXZmJjYXoiQyPL1YGEzOg8rReptVx3LeiyLt4rzwKM187qhyphenhyphenBeUeKvUAX8yqdt0iKVM4PPgWwx-fuflTKSUmHhd2PIFHwyRJBZw4lUhkz08x/s1600/972460c02a851f80b44e0bc42032eae072d8c25e.jpg"  alt="Image 3" id="luke1">victoria__rossi</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-card="3">
+            <div class="card-inner">
+                <div class="card-front">
+                   <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=victoria__rossi" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyUtbUybX7Z2cQXGOILGgufL2kNbXJJWciJPI28ax74rn-D7Q27gjOdZlEHjm0hrISA9OhyUg78yPnoXZmJjYXoiQyPL1YGEzOg8rReptVx3LeiyLt4rzwKM187qhyphenhyphenBeUeKvUAX8yqdt0iKVM4PPgWwx-fuflTKSUmHhd2PIFHwyRJBZw4lUhkz08x/s1600/972460c02a851f80b44e0bc42032eae072d8c25e.jpg" alt="Image 3"  id="luke1">victoria__rossi</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth pair of cards (data-card="4") -->
+        <div class="card" data-card="4">
+            <div class="card-inner">
+                <div class="card-front">
+                   <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=your_desssert" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8AiI7Ro-8132Rep6p-sYoIQtwTyL9EwPigjADixJ85olbEo4qiN4ZnC8r9xdpS8AFX9TR_8ywG0iQZ3LKihV2gUvaw9SBbegwhb91A2IeOHV4HYRmaHPiFe-qjleRSdQBsVO811pfcsYCgixapyNX3jD_DDl0zInEi1tp7Bg0qROfeT3_e3E1Dowt/s1600/fe7937c648ea823835bfb6e95723a62df1f9870c.jpg" alt="Image 4" class="card-img" id="luke">your_desssert</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-card="4">
+            <div class="card-inner">
+                <div class="card-front">
+             <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=your_desssert" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8AiI7Ro-8132Rep6p-sYoIQtwTyL9EwPigjADixJ85olbEo4qiN4ZnC8r9xdpS8AFX9TR_8ywG0iQZ3LKihV2gUvaw9SBbegwhb91A2IeOHV4HYRmaHPiFe-qjleRSdQBsVO811pfcsYCgixapyNX3jD_DDl0zInEi1tp7Bg0qROfeT3_e3E1Dowt/s1600/fe7937c648ea823835bfb6e95723a62df1f9870c.jpg" alt="Image 4" class="card-img" id="luke">your_desssert</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth pair of cards (data-card="5") -->
+        <div class="card" data-card="5">
+            <div class="card-inner">
+                <div class="card-front">
+                <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=lil_eva" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisUe07XAQRWIokSYnUSc7o4HkJ-QrQ1KJXyOPrAH-jSNJ3CzeKXFYKs8DDvi_M-3lkvqKNKq2T_4f89L12FtpyLQUgRXWjvBhL2zV7SE7S1IYOAhNf79NI3nGmuV5hKU37fxO616PALdsQztEvdkQA7xSYm3U7g7sZkK3P-ygkiBnQmoJuyhnhMIZV/s1600/245f9cb190cd5c819d44399c5313702f26d5c15f%20%281%29.jpg" alt="Image 5" class="card-img" id="luke">lil_eva</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-card="5">
+            <div class="card-inner">
+                <div class="card-front">
+               <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=lil_eva" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisUe07XAQRWIokSYnUSc7o4HkJ-QrQ1KJXyOPrAH-jSNJ3CzeKXFYKs8DDvi_M-3lkvqKNKq2T_4f89L12FtpyLQUgRXWjvBhL2zV7SE7S1IYOAhNf79NI3nGmuV5hKU37fxO616PALdsQztEvdkQA7xSYm3U7g7sZkK3P-ygkiBnQmoJuyhnhMIZV/s1600/245f9cb190cd5c819d44399c5313702f26d5c15f%20%281%29.jpg" alt="Image 5" class="card-img" id="luke">lil_eva</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sixth pair of cards (data-card="6") -->
+        <div class="card" data-card="6">
+            <div class="card-inner">
+                <div class="card-front">
+                 <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=epic_girls" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo5nk6bZTKaoycqv8EHC_dAbQ16C4etNRpAQa6Hespk1FZdaRdkB1Cn4A76x5G-k076kxS6og_JH1KzIoSStG1rd76UfQxzWI2jc7JDrZIajreU4FjPlss-AFNJPfqdGKeuuNPKl_gL99xdVo0GUn70yyDMpof_u2KsRQfjtnFv364HRkvXOdqNxpp/s1600/476125290ae6bdcf077712d3d83c8e74b94ef5bf.jpg" alt="Image 6" class="card-img" id="luke">epic_girls</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-card="6">
+            <div class="card-inner">
+                <div class="card-front">
+            <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=epic_girls" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo5nk6bZTKaoycqv8EHC_dAbQ16C4etNRpAQa6Hespk1FZdaRdkB1Cn4A76x5G-k076kxS6og_JH1KzIoSStG1rd76UfQxzWI2jc7JDrZIajreU4FjPlss-AFNJPfqdGKeuuNPKl_gL99xdVo0GUn70yyDMpof_u2KsRQfjtnFv364HRkvXOdqNxpp/s1600/476125290ae6bdcf077712d3d83c8e74b94ef5bf.jpg" alt="Image 6" class="card-img" id="luke">epic_girls</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Seventh pair of cards (data-card="7") -->
+        <div class="card" data-card="7">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=needygamergirl" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFoyAxyP9BnlkcD4K6gbDUBqFLbIC_lQYI8liMCT06qLtzIKkpcm7ojU8OR-QuMwW69Wbwp3rmQTBP2tZP3XkOEalrpsVxfGlLuIvN-fTkTwaFmul3q8cJxaixL3ExcEWfuJgTaLppjlRIZZpfl6ZzYWwpuN1jRSBntph81cGuU_23efeLivnXnCf_/s1600/b255b88811eb384bf74dc905a0b982c76721b0a7.jpg" alt="Image 7" class="card-img" id="luke">needygamergirl</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-card="7">
+            <div class="card-inner">
+                <div class="card-front">
+         <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=needygamergirl" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFoyAxyP9BnlkcD4K6gbDUBqFLbIC_lQYI8liMCT06qLtzIKkpcm7ojU8OR-QuMwW69Wbwp3rmQTBP2tZP3XkOEalrpsVxfGlLuIvN-fTkTwaFmul3q8cJxaixL3ExcEWfuJgTaLppjlRIZZpfl6ZzYWwpuN1jRSBntph81cGuU_23efeLivnXnCf_/s1600/b255b88811eb384bf74dc905a0b982c76721b0a7.jpg" alt="Image 7" class="card-img" id="luke">needygamergirl</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Eighth pair of cards (data-card="8") -->
+        <div class="card" data-card="8">
+            <div class="card-inner">
+                <div class="card-front">
+         <a href="https://chaturbate.com/lovebabyblush/" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaUfQPZCTVitv13quz0ioQeFI3quoLQqEblXkazfOb1mTTDXQKeU-cU4DEMp8-WrG_J50pYhE4AadvEe5yCsMQ9z-2leo1nYvI04uJuw8xALdDiqbMWbaiki_dEAkrwkmmKLQDFQGSrhHIY4w_u42YzY-Cp0xAnL_UvzCci8XqylBqDMP91dNsoN7A/s1600/9c53f65d7566ff13d696a646a4c60236cee77b60.jpg" alt="Image 8" class="card-img" id="luke">lovebabyblush</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-card="8">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/lovebabyblush/" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaUfQPZCTVitv13quz0ioQeFI3quoLQqEblXkazfOb1mTTDXQKeU-cU4DEMp8-WrG_J50pYhE4AadvEe5yCsMQ9z-2leo1nYvI04uJuw8xALdDiqbMWbaiki_dEAkrwkmmKLQDFQGSrhHIY4w_u42YzY-Cp0xAnL_UvzCci8XqylBqDMP91dNsoN7A/s1600/9c53f65d7566ff13d696a646a4c60236cee77b60.jpg" alt="Image 8" class="card-img" id="luke">lovebabyblush</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+       <div class="card" data-card="9">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/white_godness/" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4XvUt5y7MxqvpDQ16LKdDDf3dyhyc6jXlZcNaYTvLqt4J87yvSuwYbD1no3kWQnjQ5oX9cYMQAVTADitavJeunNy2XReKtNsdje-7j6smZKe3cTaC7hqGA_XAZMr5xeSbr9BVS63rOy53hq0cDv1T0D9Njj73BkDdD2EGvpN_J9TdW9GgLq-42ff-/s1600/cc1b65cefa3871d3eb6d5edfe9d178a4fa601aa2.jpg" alt="Image 9" class="card-img" id="luke">white_godness</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+       <div class="card" data-card="9">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/white_godness/" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4XvUt5y7MxqvpDQ16LKdDDf3dyhyc6jXlZcNaYTvLqt4J87yvSuwYbD1no3kWQnjQ5oX9cYMQAVTADitavJeunNy2XReKtNsdje-7j6smZKe3cTaC7hqGA_XAZMr5xeSbr9BVS63rOy53hq0cDv1T0D9Njj73BkDdD2EGvpN_J9TdW9GgLq-42ff-/s1600/cc1b65cefa3871d3eb6d5edfe9d178a4fa601aa2.jpg" alt="Image 9" class="card-img" id="luke">white_godness</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+      <div class="card" data-card="10">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=as1an_girlfriend" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA6NekeQIi46Gcw7aI0jz3jwQxbgheUgsHPoG-N6a5dQC1I1HN-wEJTF_iubCqx6n_S-1usUhlSmW574ErYpbHfAOpE6g0V-3nQrShF3ISB4T3y64VQtrpUYj-8j7qP8zXg_sbjZoA45GAcH2Jq-pgFwicNO-F-CYSb-9lPvXE8RU2s-5-Yubok4cE/s1600/ad325b8c76f4bacd0d4b5fdef4b55bf171802c44.jpg" alt="Image 10" class="card-img" id="luke">as1an_girlfriend</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+      <div class="card" data-card="10">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=as1an_girlfriend" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA6NekeQIi46Gcw7aI0jz3jwQxbgheUgsHPoG-N6a5dQC1I1HN-wEJTF_iubCqx6n_S-1usUhlSmW574ErYpbHfAOpE6g0V-3nQrShF3ISB4T3y64VQtrpUYj-8j7qP8zXg_sbjZoA45GAcH2Jq-pgFwicNO-F-CYSb-9lPvXE8RU2s-5-Yubok4cE/s1600/ad325b8c76f4bacd0d4b5fdef4b55bf171802c44.jpg" alt="Image 10" class="card-img" id="luke">as1an_girlfriend</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+      <div class="card" data-card="11">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=xterribly_cutex" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQkkt5Kco_jJQb3X1jkEQiC52P1dC6-9Dv0829kkNfj5EhzFMp08zplZYy7ARb-FCx0GUFsJO-KoqyvabkMjsWQhRdccn7I_2NGjMMN2JEzauSt3hJ6bey8NmSG9gHuow9H3OofkUbcUKRumsr72tOLVfyIQsN6_fCa2y7ipisvsJq0z_e_EsnDiPd/s1600/3a14e88bbc75ad6b13e70343a90aaa129d660de8.jpg" alt="Image 11" class="card-img" id="luke">xterribly_cutex</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+      <div class="card" data-card="11">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=xterribly_cutex" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQkkt5Kco_jJQb3X1jkEQiC52P1dC6-9Dv0829kkNfj5EhzFMp08zplZYy7ARb-FCx0GUFsJO-KoqyvabkMjsWQhRdccn7I_2NGjMMN2JEzauSt3hJ6bey8NmSG9gHuow9H3OofkUbcUKRumsr72tOLVfyIQsN6_fCa2y7ipisvsJq0z_e_EsnDiPd/s1600/3a14e88bbc75ad6b13e70343a90aaa129d660de8.jpg" alt="Image 11" class="card-img" id="luke">xterribly_cutex</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+      <div class="card" data-card="12">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/candy_beck/" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOuj0aIiSE8S0wpvyRdOBHA3h9D421r1G-i8LcI03sWX92A0irSaWnsxXucvRiaRxFuIQ7ct8OM7_eWiUshWbur0MHJCp5muDfTdiBenXHA5pF7PM7dK268Us7uM6w8Ml4F03-A3HdszkwBu2uB25rg3Kyvdrkkl4qeMDHn3Qb7IYdPtWbr-u-7Njx/s1600/b9bb84a7241d52610d8706e5cc9577f093309620.jpg" alt="Image 12" class="card-img" id="luke">candy_beck</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+ <div class="card" data-card="12">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/candy_beck/" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOuj0aIiSE8S0wpvyRdOBHA3h9D421r1G-i8LcI03sWX92A0irSaWnsxXucvRiaRxFuIQ7ct8OM7_eWiUshWbur0MHJCp5muDfTdiBenXHA5pF7PM7dK268Us7uM6w8Ml4F03-A3HdszkwBu2uB25rg3Kyvdrkkl4qeMDHn3Qb7IYdPtWbr-u-7Njx/s1600/b9bb84a7241d52610d8706e5cc9577f093309620.jpg" alt="Image 12" class="card-img" id="luke">candy_beck</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+      <div class="card" data-card="13">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=missclairdelune" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin-OaH6lhfVLhZ0ZSDLlJz4TX170w3UZs6x1kPqaFJNBXUIixH6uOsBnKDWH3_tRyvwyzIE6I9N51xobrm8OQzP6DLVawH_AYu_Qr_4hF7DH0AA09IQcnWi5AcUoqmey2hJVSN19LFzZVgw0ILUxUNQCjLH2kWAlx3hubImS7mxvVsKvuAuRBIhKKf/s1600/43f8ac36571efc7474829bc75f246053adf1348a.jpg" alt="Image 13" class="card-img" id="luke">missclairdelune</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+<div class="card" data-card="13">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=missclairdelune" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin-OaH6lhfVLhZ0ZSDLlJz4TX170w3UZs6x1kPqaFJNBXUIixH6uOsBnKDWH3_tRyvwyzIE6I9N51xobrm8OQzP6DLVawH_AYu_Qr_4hF7DH0AA09IQcnWi5AcUoqmey2hJVSN19LFzZVgw0ILUxUNQCjLH2kWAlx3hubImS7mxvVsKvuAuRBIhKKf/s1600/43f8ac36571efc7474829bc75f246053adf1348a.jpg" alt="Image 13" class="card-img" id="luke">missclairdelune</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+      <div class="card" data-card="14">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=catherine_blare" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzxJ3WDV38_J0QeJQjCIfTTbeKL_ZpMw5B79wEwoW68q7aI1BgSvYLOThxm9Nvka7XltDxYoO9b96ZBxZWPTMHJzXT62ZVwTpj7QGfPygRwVL1yTWXNXm3mcflR3dreNG9WaAqC6iuqgyhig3PQG3m6mkKDVdD_GyguH5UnpSVN30bZRa0QayqJDDX/s1600/0335019cfc02da70c2c654bdf82b269566fd9ae5.jpg" alt="Image 14" class="card-img" id="luke">catherine_blare</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+        </div>
+ <div class="card" data-card="14">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=catherine_blare" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzxJ3WDV38_J0QeJQjCIfTTbeKL_ZpMw5B79wEwoW68q7aI1BgSvYLOThxm9Nvka7XltDxYoO9b96ZBxZWPTMHJzXT62ZVwTpj7QGfPygRwVL1yTWXNXm3mcflR3dreNG9WaAqC6iuqgyhig3PQG3m6mkKDVdD_GyguH5UnpSVN30bZRa0QayqJDDX/s1600/0335019cfc02da70c2c654bdf82b269566fd9ae5.jpg" alt="Image 14" class="card-img" id="luke">catherine_blare</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+      </div>
+      <div class="card" data-card="15">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=lilith__rosse" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgivigVHGKpQpfeMSIrxMhd1MT-TtpFStXacqCiwkbLIqNLPj_ivQAC15iVIVKDe6zpg8mlajCkKSNfDY3Da0tlgWxzfrD4Sim69g32l8GayaWZfxgQX8YvzRLWtj5_9G44SqiJXH1CO-jxOoAKNCEVoA4yBmw02H_uUb78CaNUIm8w0tVcuXTz67Be/s1600/1a486d51cd5857668da0f6a491fa8ba78c7c80f6.jpg" alt="Image 15" class="card-img" id="luke">lilith__rosse</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+      </div>
+<div class="card" data-card="15">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=lilith__rosse" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgivigVHGKpQpfeMSIrxMhd1MT-TtpFStXacqCiwkbLIqNLPj_ivQAC15iVIVKDe6zpg8mlajCkKSNfDY3Da0tlgWxzfrD4Sim69g32l8GayaWZfxgQX8YvzRLWtj5_9G44SqiJXH1CO-jxOoAKNCEVoA4yBmw02H_uUb78CaNUIm8w0tVcuXTz67Be/s1600/1a486d51cd5857668da0f6a491fa8ba78c7c80f6.jpg" alt="Image 15" class="card-img" id="luke">lilith__rosse</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+      </div>
+<div class="card" data-card="16">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=mazeekiin" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuZrYaVF_vbWaRLRqQWU22fJB-S6zF2fYd0mI6tzY_-H4ciFdSxCvtJIUT773DUZQwH6rKKwxTxWXOqXzAChQdbI-H31ka6cX_VeNCu6h1BGEC-shqs8W-U0p87rHKQXVTOFUSPI119lf_hqvGbwrwCEE4LkgYP-44G35wNCI5WQAmrAKgTD3jHS59/s1600/6a4056865ee2972f6ad9d9e8f03b87ff63cded41.jpg" alt="Image 16" class="card-img" id="luke">mazeekiin</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+      </div>
+<div class="card" data-card="16">
+            <div class="card-inner">
+                <div class="card-front">
+           <a href="https://chaturbate.com/in/?tour=7Bge&campaign=2F0cU&track=default&room=mazeekiin" target="_blank"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuZrYaVF_vbWaRLRqQWU22fJB-S6zF2fYd0mI6tzY_-H4ciFdSxCvtJIUT773DUZQwH6rKKwxTxWXOqXzAChQdbI-H31ka6cX_VeNCu6h1BGEC-shqs8W-U0p87rHKQXVTOFUSPI119lf_hqvGbwrwCEE4LkgYP-44G35wNCI5WQAmrAKgTD3jHS59/s1600/6a4056865ee2972f6ad9d9e8f03b87ff63cded41.jpg" alt="Image 16" class="card-img" id="luke">mazeekiin</a>
+                </div>
+                <div class="card-back">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihl5aXxBBcTTqabgKbKHGGMKlU9jG3WNs_15mkCnfps1SKMR15v7223oYG0RcwyKg7yikXhHmuvINHjmB43KFQ0KDo7qhfTdDUG9jqdtm2tgQ4-1tX9M1AsE-KlWdyDlTlcqutbZUyk47ts15qiB4v7zKfCdH5WnFfybbZ9X7V9TXkb9M4kqvFMP9y/s1600/BACK.png" alt="Card Back" class="card-img">
+                </div>
+            </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
